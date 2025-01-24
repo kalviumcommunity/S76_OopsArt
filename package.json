@@ -1,0 +1,11 @@
+{
+  "name": "s76_oopsart",
+  "version": "1.0.0",
+  "description": "OopsArt is a platform dedicated to showcasing the funniest and weirdest art creations. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sandanam.k",
+  "license": "ISC"
+}
