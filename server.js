@@ -1,11 +1,9 @@
-const express = require('express');
-const app = express();
-const port = 3000;
-
+const express=require('express');
+const app= express();
+const port =3000;
 app.get('/ping',(req,res)=>{
-    res.send('pongl');
-});
-
-app.listen(port, ()=>{
+    res.send('Pong!');
+})
+app.listen(port,()=>{
     console.log(`server is running at http://localhost:${port}`);
 });
