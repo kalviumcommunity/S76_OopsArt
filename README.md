@@ -41,6 +41,10 @@ OopsArt is a platform dedicated to showcasing the funniest and weirdest art crea
 
 #### Database
 - **MongoDB**: Securely stores user profiles, posts, comments, and other essential data, ensuring reliability and quick data retrieval.
+<<<<<<< HEAD
+
+=======
 - 
+>>>>>>> 604898a03c4cba60ad4a73cabb5a6779b50f1dc2
 ## https://s76-oopsart.onrender.com/ping
 
