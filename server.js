@@ -1,13 +1,17 @@
-const express=require('express');
-const app= express();
+require('dotenv').config(); 
+
+const express = require('express');
+const app = express();
 const port = process.env.PORT || 3000;
-app.get('/ping',(req,res)=>{
+const dotenv =require("dotenv");
+const connectDatabase = require('./database');
+
+app.get('/ping', (req, res) => {
     res.send('Pong!');
-})
-app.listen(port, (err) => {
-    if (err) {
-        console.error('Failed to start server:', err);
-        process.exit(1);
-    }
+});
+
+connectDatabase();
+
+app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}`);
 });
