@@ -1,20 +1,20 @@
-const User = require('../models/postschema'); // Import User Schema
+const User = require('../models/postschema');
+
+// ✅ Create multiple users
 exports.createUsers = async (req, res) => {
-    try {
-      const users = req.body; // Expecting an array of users
-      if (!Array.isArray(users) || users.length === 0) {
-        return res.status(400).json({ message: "Invalid input: Expecting an array of users" });
-      }
-
-      const newUsers = await User.insertMany(users);
-      res.status(201).json({ message: 'Users created successfully!', users: newUsers });
-    } catch (error) {
-      res.status(500).json({ error: error.message });
+  try {
+    const users = req.body;
+    if (!Array.isArray(users) || users.length === 0) {
+      return res.status(400).json({ message: "Invalid input: Expecting an array of users" });
     }
-  };
+    const newUsers = await User.insertMany(users);
+    res.status(201).json({ message: 'Users created successfully!', users: newUsers });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
 
-
-// ✅ Read (Get all users)
+// ✅ Get all users
 exports.getAllUsers = async (req, res) => {
   try {
     const users = await User.find();
@@ -24,7 +24,7 @@ exports.getAllUsers = async (req, res) => {
   }
 };
 
-// ✅ Read (Get a single user by ID)
+// ✅ Get single user by ID
 exports.getUserById = async (req, res) => {
   try {
     const user = await User.findById(req.params.id);
@@ -35,7 +35,7 @@ exports.getUserById = async (req, res) => {
   }
 };
 
-// ✅ Update user details
+// ✅ Update user
 exports.updateUser = async (req, res) => {
   try {
     const updatedUser = await User.findByIdAndUpdate(req.params.id, req.body, { new: true });
@@ -46,7 +46,7 @@ exports.updateUser = async (req, res) => {
   }
 };
 
-// ✅ Delete a user
+// ✅ Delete user
 exports.deleteUser = async (req, res) => {
   try {
     const deletedUser = await User.findByIdAndDelete(req.params.id);
@@ -55,5 +55,4 @@ exports.deleteUser = async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
-  
 };

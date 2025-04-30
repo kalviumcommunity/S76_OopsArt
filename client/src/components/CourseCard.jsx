@@ -1,4 +1,5 @@
-const CourseCard = ({ course }) => {
+function CourseCard ({ course }) {
+    
     return (
       <div className="border p-4 rounded-lg shadow-md">
         <h2 className="text-xl font-semibold">{course.title}</h2>
@@ -7,6 +8,6 @@ const CourseCard = ({ course }) => {
       </div>
     );
   };
-  
+
   export default CourseCard;
   
