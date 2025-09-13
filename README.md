@@ -1,49 +1,88 @@
-# S76_OopsArt
-## OopsArt
+### ***OopsArt - The Ultimate Art Marketplace & Social Platform***
 
-### Project Overview
+#### ***Project Overview***
 
-OopsArt is a platform dedicated to showcasing the funniest and weirdest art creations. Users can share, explore, and interact with bizarre and humorous art pieces while contributing their unique creations to the community. Whether you're an artist looking to share your quirky works or an enthusiast in search of a good laugh, OopsArt is your go-to platform.
+OopsArt is a unique platform that allows users to showcase, buy, and sell all kinds of artwork. Whether you're an artist looking to monetize your creations or an art enthusiast seeking something unique, OopsArt provides the perfect space for you. The platform is designed to bridge the gap between artists and buyers, making it easy for creators to display their work and reach a wider audience. With an intuitive interface and powerful features, OopsArt ensures a seamless experience for both artists and collectors. Our mission is to support artists by providing them with an accessible and dynamic marketplace while fostering a vibrant community that appreciates creativity in all its forms.
 
-### Key Features
+OopsArt is available as both a **web platform** and a **mobile application**, ensuring accessibility across different devices. Users can seamlessly browse, upload, and purchase artwork on the go through the mobile app, making art more interactive and engaging.
 
-#### User Profile
-- Create and manage personalized profiles to showcase your art collection.
-- View other users' profiles to explore their unique creations.
+---
 
-#### Search Filters
-- Discover art by categories like "funny," "weird," or specific tags.
-- Advanced filtering options to refine your search and find exactly what you're looking for.
+### ***1. User Roles***
 
-#### Post Options
-- Upload new artwork effortlessly.
-- Edit captions to better describe your art pieces.
-- Delete posts when necessary to keep your profile updated.
+- **Artists**: Upload, showcase, and sell their artwork.
+- **Buyers**: Explore, like, comment, and purchase art.
+- **Admins**: Moderate content, manage disputes, and oversee transactions.
 
-#### Engagement Features
-- Like and comment on posts to promote interaction within the community.
-- Share your favorite pieces to external platforms or with other OopsArt users.
+---
 
-#### Notifications
-- Stay updated with alerts for new likes, comments, and shares on your posts.
-- Receive updates when your favorite artists upload new content.
+### ***2. Core Features***
 
-#### Moderation Tools
-- Report inappropriate content to maintain a positive community environment.
-- Admin review system to ensure compliance with platform guidelines.
+#### **A. Art Showcasing Features**
 
-### Tech Stack
+- **User Profiles**: Artists and buyers can create profiles, follow others, and view their collections.
+- **Art Feed**: Display trending and newly uploaded art.
+- **Likes & Comments**: Users can interact with posts.
+- **Search & Filters**: Filter by category (abstract, digital, traditional, modern, etc.), price range, artist, etc.
+- **Share Feature**: Share artworks on other platforms.
 
-#### Frontend
-- **React with Vite**: Provides a fast and seamless user experience, ensuring smooth navigation and interactions.
+#### **B. Art Marketplace Features**
 
-#### Backend
-- **Node.js and Express.js**: Handles server-side operations efficiently, ensuring robust and scalable performance.
+- **Art Listings**: Artists can set prices and add descriptions.
+- **Shopping Cart**: Users can add multiple artworks before purchasing.
+- **Checkout System**: Secure payment integration (Stripe, PayPal).
+- **Order Tracking**: Buyers can track their purchases.
+- **Seller Dashboard**: Artists can manage inventory, sales, and earnings.
+- **Ratings & Reviews**: Users can rate sellers and provide feedback.
 
-#### Database
-- **MongoDB**: Securely stores user profiles, posts, comments, and other essential data, ensuring reliability and quick data retrieval.
+#### **C. Admin & Moderation**
 
+- **Content Moderation**: Admins can review and remove inappropriate content.
+- **User Management**: Block/report features for harmful behavior.
+- **Transaction Management**: Dispute resolution for purchases.
 
-## https://s76-oopsart.onrender.com/ping
+---
 
-## Cloudflare link :  https://asap-cet.pages.dev/
+### ***3. Tech Stack***
+
+#### **Frontend**
+
+- **React with Vite** (Fast and smooth UI)
+- **React Native** (For mobile application development)
+- **Tailwind CSS** (Modern styling)
+- **Redux/Zustand** (State management)
+
+#### **Backend**
+
+- **Node.js + Express.js** (Handling API requests)
+- **MongoDB** (Storing user data, art posts, transactions)
+- **Stripe/PayPal API** (Secure payment processing)
+
+#### **Additional Features**
+
+- **Cloudinary** (For image uploads)
+- **WebSockets (Socket.io)** (For real-time notifications)
+- **AI Recommendations** (Suggest art based on user activity)
+- **Push Notifications** (For mobile alerts on new likes, comments, and purchases)
+
+---
+
+### ***4. Contribution Guidelines***
+
+- Fork the repository and create a feature branch.
+- Commit your changes with clear messages.
+- Open a pull request for review.
+- Follow coding best practices and maintain clean code.
+
+---
+
+### ***5. License***
+
+This project is licensed under the MIT License.
+
+---
+
+### ***6. Contact***
+
+For questions or collaborations, reach out at: santhanamk9604@gmail.com
+
